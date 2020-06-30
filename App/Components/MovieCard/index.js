@@ -36,7 +36,7 @@ export function MovieCard({movie, isActive}) {
                             {'Released date: ' + movie.release_date}
                         </Text>
                     ) : null}
-                    <Text style={Styles.movieDetail} numberOfLines={10}>
+                    <Text style={Styles.movieDetail} numberOfLines={12}>
                         {movie.overview}
                     </Text>
                 </View>

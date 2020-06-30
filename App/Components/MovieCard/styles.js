@@ -44,7 +44,7 @@ export default StyleSheet.create({
     },
     movieYear: {
         fontSize: 12,
-        fontWeight: '100',
+        fontWeight: '200',
         marginHorizontal: 12,
         flexWrap: 'wrap',
         textAlign: 'left',
@@ -53,8 +53,8 @@ export default StyleSheet.create({
         marginHorizontal: 12,
         marginBottom: 12,
         marginTop: 4,
-        fontSize: 14,
-        fontWeight: '100',
+        fontSize: 12,
+        fontWeight: '200',
         color: 'gray',
     },
 
