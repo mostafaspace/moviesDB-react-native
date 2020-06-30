@@ -1,1 +1,1 @@
-export {movie, search} from './DiscoverController';
+export {movies, search} from './DiscoverController';

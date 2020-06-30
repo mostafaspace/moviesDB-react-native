@@ -1,15 +1,15 @@
 import client from './client';
 
-export class Discover {
-    static async movie(values) {
+export class MoviesDB {
+    //movies API data
+    static async movies(values) {
         try {
             const result = await client().get('/discover/movie', {
                 params: {
-                    query: values.term,
+                    page: values.PageIndex,
                 },
             });
 
-            console.log(result);
             return result.data;
         } catch (error) {
             console.log('error', error);
@@ -20,15 +20,14 @@ export class Discover {
         try {
             const result = await client().get('search/movie', {
                 params: {
-                    query: values.term,
+                    query: values.SearchText,
+                    page: values.PageIndex,
                 },
             });
 
-            console.log(result);
             return result.data;
         } catch (error) {
             console.log('error', error);
-            console.log('error', error.response);
         }
     }
 }

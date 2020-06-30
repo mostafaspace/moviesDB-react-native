@@ -1,18 +1,15 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-    container: {
+    emptyListContainer: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
     },
-    errorContainer: {
-        marginTop: 32,
-        margin: 16,
-    },
-    errorMsg: {
-        fontSize: 14,
-        color: 'red',
+    emptyListText: {
+        lineHeight: 18,
+        color: '#222',
         textAlign: 'center',
+        margin: 16,
     },
 });

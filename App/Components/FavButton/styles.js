@@ -1,11 +1,8 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-    flatContainerStyle: {
-        paddingTop: 16,
+    favSection: {
+        paddingVertical: 4,
         paddingHorizontal: 8,
     },
     favIcon: {
@@ -13,6 +10,8 @@ export default StyleSheet.create({
         height: 24,
         fontSize: 24,
         color: 'black',
-        marginHorizontal: 16,
+    },
+    activeFavIcon: {
+        color: '#009688',
     },
 });

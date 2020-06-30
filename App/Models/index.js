@@ -1,1 +1,1 @@
-export {Discover} from './Discover';
+export {MoviesDB} from './MoviesDB';
