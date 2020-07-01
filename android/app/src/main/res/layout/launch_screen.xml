@@ -4,16 +4,16 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
     <TextView
-        android:id="@+id/uxbert"
+        android:id="@+id/moviesDB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="UXBERT"/>
+        android:text="Movies DB"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/uxbert"
+        android:layout_below="@+id/moviesDB"
         android:layout_centerHorizontal="true"
-        android:text="UXBERT Usability Lab, Project (Mostafa Magdy)
+        android:text="Movies DB Project (Mostafa Magdy)
 "/>
 </RelativeLayout>

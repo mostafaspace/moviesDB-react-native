@@ -5,6 +5,7 @@ import {
     Text,
     FlatList,
     TouchableOpacity,
+    Linking,
 } from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import Styles from './styles';
@@ -176,12 +177,22 @@ export default function HomeScreen() {
 
 HomeScreen.navigationOptions = () => {
     return {
-        headerTitle: <Text>{'UXBERT Project (Mostafa Magdy)'}</Text>,
+        headerTitle: <Text>{'MoviesDB Project (Mostafa Magdy)'}</Text>,
         headerRight: (
             <TouchableOpacity onPress={() => Actions.FavMovies()}>
                 <Icon name={'star'} style={Styles.favIcon} />
             </TouchableOpacity>
         ),
-        headerLeft: <View />,
+        headerLeft: (
+            <TouchableOpacity
+                onPress={() =>
+                    Linking.openURL(
+                        'https://github.com/mostafaspace/moviesDB-react-native',
+                    )
+                }
+            >
+                <Icon name={'public'} style={Styles.favIcon} />
+            </TouchableOpacity>
+        ),
     };
 };
